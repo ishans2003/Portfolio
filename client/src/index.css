@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+html { scroll-behavior: smooth; background: #000; }
+body { min-width: 320px; background: #000; color: #f4f4f5; font-family: "Roboto", ui-sans-serif, system-ui, sans-serif; }
+::selection { background: rgba(244, 63, 94, 0.35); color: #fff; }
