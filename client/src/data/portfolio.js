@@ -17,12 +17,14 @@ export const projects = [
     desc: 'Role-based Admin/Employee platform with attendance, leave management, payslips, background jobs and AI code review.',
     stack: ['React', 'Tailwind', 'Node', 'Express', 'MongoDB', 'Inngest'],
     github: 'https://github.com/ishans2003/EMS',
+    live: 'https://ems-w5sh.vercel.app/dashboard',
   },
   {
     title: 'Ekart',
     desc: 'E-commerce storefront with user management: email verification, JWT auth, admin role and persistent cart.',
     stack: ['React', 'Redux Toolkit', 'Tailwind', 'Express', 'MongoDB', 'Nodemailer'],
     github: 'https://github.com/ishans2003/ekart',
+    live: 'https://ekart-f0csvnlhg-ik-14f7.vercel.app/',
   },
   {
     title: 'Bank Ledger',
@@ -36,6 +38,6 @@ export const projects = [
 export const skills = {
   Frontend: ['React', 'Redux Toolkit', 'React Router', 'Tailwind CSS', 'Vite'],
   Backend: ['Node.js', 'Express', 'REST APIs', 'JWT', 'bcrypt'],
-  Data: ['MongoDB', 'Mongoose', 'SQL', 'Python'],
+  Data: ['MongoDB', 'Mongoose', 'PostgreSQL', 'SQL', 'Python'],
   Tools: ['Git & GitHub', 'Render', 'Vercel', 'ESLint'],
 };

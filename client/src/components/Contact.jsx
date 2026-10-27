@@ -3,6 +3,8 @@ import toast from 'react-hot-toast';
 import { BriefcaseBusiness, Code2, Mail, MapPin, Users } from 'lucide-react';
 import { profile } from '../data/portfolio.js';
 
+const apiUrl = (import.meta.env.VITE_API_URL || 'http://localhost:5000').replace(/\/$/, '');
+
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [busy, setBusy] = useState(false);
@@ -12,7 +14,7 @@ export default function Contact() {
     e.preventDefault();
     setBusy(true);
     try {
-      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/contact`, {
+      const res = await fetch(`${apiUrl}/api/contact`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
