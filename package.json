@@ -1,0 +1,10 @@
+{
+  "name": "ishans-portfolio",
+  "private": true,
+  "workspaces": [
+    "server"
+  ],
+  "scripts": {
+    "start": "npm --prefix server start"
+  }
+}

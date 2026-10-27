@@ -38,7 +38,7 @@ Configure the server's `.env` with the MongoDB connection string, JWT secret, an
 
 ## Deploy the API to Render
 
-The API package is in `server/`. When configuring an existing Render Web Service, set **Root Directory** to `server`, **Build Command** to `npm install`, and **Start Command** to `npm start`. The repository also includes a `render.yaml` Blueprint with these settings. Set `MONGODB_URI`, `CLIENT_URL` (the deployed frontend origin), `ADMIN_EMAIL`, and `ADMIN_PASSWORD_HASH` in Render's environment; the Blueprint generates `JWT_SECRET`.
+The API package is in `server/`. When configuring an existing Render Web Service, set **Root Directory** to `server`, **Build Command** to `npm install`, and **Start Command** to `npm start`. The repository also includes a `render.yaml` Blueprint with these settings. If the service runs from the repository root, the root `package.json` supports `yarn` for installation and `npm start` for launching the server. Set `MONGODB_URI`, `CLIENT_URL` (the deployed frontend origin), `ADMIN_EMAIL`, and `ADMIN_PASSWORD_HASH` in Render's environment; the Blueprint generates `JWT_SECRET`.
 
 The API exposes `POST /api/auth/login` for admin login, `POST /api/contact` for contact form submissions, and `GET /api/contact` for authenticated admin message retrieval. The root endpoint (`/`) returns a basic API status message.
 
